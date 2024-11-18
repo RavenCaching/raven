@@ -34,11 +34,13 @@ Request traces are expected to be in a space-separated format with 3 columns:
 - id should be a long long int, used to uniquely identify objects
 - size should be uint32, this is object's size in bytes
 
-## test commands
+## Test commands
 The basic interface is
  ```
  python3 run_cache.py $trace $cache_size -p $cache_policy [--param=value]
  ```
+Two Mixture Density Network pre-trained models can be accessed in [src/ckpoints](https://github.com/RavenCaching/raven/tree/main/src/ckpoints).
+
 The [src/baseline_scripts.py](https://github.com/RavenCaching/raven/blob/main/src/baseline_scripts.py) contains python wrapper to quickly run all caching policies in [webcachesim](https://github.com/dasebe/webcachesim) and [webcachesim2](https://github.com/sunnyszy/lrb).
 
 If you find this work useful for your research, please cite:
